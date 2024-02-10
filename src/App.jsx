@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div
-        className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+        className="w-full h-screen flex flex-wrap justify-center items-center"
         style={{
             
         }}
@@ -36,7 +36,7 @@ function App() {
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
-                        convert()
+                        convert();
                        
                     }}
                 >
