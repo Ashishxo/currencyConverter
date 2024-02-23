@@ -14,7 +14,7 @@ function InputBox({
    const amountInputId = useId()
 
     return (
-        <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
+        <div className={`bg-white p-3 rounded-2xl text-sm flex ${className}`}>
             <div className="w-1/2">
                 <label htmlFor={amountInputId}  className="text-black/40 mb-2 inline-block">
                     {label}
@@ -40,7 +40,7 @@ function InputBox({
                     
                         {currencyOptions.map((currency) => (
                             <option key={currency} value={currency}>
-                            {currency}
+                            {currency.toUpperCase()}
                             </option>
                         ))}
                 
